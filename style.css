@@ -1,0 +1,38 @@
+ul {
+  list-style-type: none;
+}
+
+h2,h3 {
+	text-align: left;
+}
+
+.addbutton {
+	float: right;
+}
+
+/*.addbutton,.deletebutton,.editbutton,.savebutton {
+	float: right;
+}*/
+.editbutton,.deletebutton,.savebutton {
+	margin: 5px;
+}
+.buttonspan {
+	float:right;
+}
+ul {
+	padding-left: 15px;
+}
+
+ul>li{
+	padding: 8px;
+}
+div {
+	margin-left: 442px;
+	margin-top: 61px;
+	padding: 20px 33px 50px 33px;
+	width: 466px;
+}
+hr {
+	margin-bottom: 15px;
+}
+
