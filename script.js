@@ -1,4 +1,3 @@
-
 $('.todolist').on('click','.deletebutton',function(){
 	$(this).parent().parent().remove();
 })
