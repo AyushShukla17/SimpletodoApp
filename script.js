@@ -1,12 +1,8 @@
-$('.todolist').on('click','.deletebutton',function(){
+$('.todolist, .donelist').on('click','.deletebutton',function(){
 	$(this).parent().parent().remove();
 })
 
-$('.donelist').on('click','.deletebutton',function(){
-	$(this).parent().parent().remove();
-})
-
-$('.todolist').on('click','.editbutton',function(){
+$('.todolist, .donelist').on('click','.editbutton',function(){
 	$(this).parent().find('.savebutton').css("display","inline");
 	$(this).parent().find('.editbutton').css("display","none");
 	$(this).parent().parent().find('.todoitem').hide();
@@ -14,7 +10,7 @@ $('.todolist').on('click','.editbutton',function(){
 
 })
 
-$('.todolist').on('click','.savebutton',function(){
+$('.todolist, .donelist').on('click','.savebutton',function(){
 	$(this).parent().find('.savebutton').css("display","none");
 	$(this).parent().find('.editbutton').css("display","inline");
 	$(this).parent().parent().find('.todoitem').text($(this).parent().parent().find('#edit').val());
@@ -22,22 +18,6 @@ $('.todolist').on('click','.savebutton',function(){
 	$(this).parent().parent().find('#edit').hide();
 })
 
-
-$('.donelist').on('click','.editbutton',function(){
-	$(this).parent().find('.savebutton').css("display","inline");
-	$(this).parent().find('.editbutton').css("display","none");
-	$(this).parent().parent().find('.todoitem').hide();
-	$(this).parent().parent().find('#edit').show().val($(this).parent().parent().find('.todoitem').text());
-
-})
-
-$('.donelist').on('click','.savebutton',function(){
-	$(this).parent().find('.savebutton').css("display","none");
-	$(this).parent().find('.editbutton').css("display","inline");
-	$(this).parent().parent().find('.todoitem').text($(this).parent().parent().find('#edit').val());
-	$(this).parent().parent().find('.todoitem').show();
-	$(this).parent().parent().find('#edit').hide();
-})
 
 $('.todolist').on('change','.mycheckbox',function(){
 	
