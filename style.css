@@ -15,6 +15,7 @@ h2,h3 {
 }*/
 .editbutton,.deletebutton,.savebutton {
 	margin: 5px;
+	cursor: pointer;
 }
 .buttonspan {
 	float:right;

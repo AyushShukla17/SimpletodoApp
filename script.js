@@ -56,8 +56,11 @@ $('.donelist').on('change','.mycheckbox',function(){
 
 $('.addbutton').on('click',function(){
 	let todo = $('input').val();
-	$('input').val(" ");
+	if(!!todo){
+		$('input').val(" ");
 	let str = '<li>'+ '<input type="checkbox" class = "mycheckbox">' +'<span class="todoitem">' + todo +'</span>'+ ' <input type="text" id="edit" style="display:none" /> '  + '<span class="buttonspan">  <span class="editbutton">EDIT</span> ' + '  <span style="display:none;" class="savebutton">SAVE</span>' + "  " +'<span class="deletebutton">DELETE</span></span><hr style="opacity:0.5">'
 	$('.todolist').append(str);
+	}
+	
 
 })
