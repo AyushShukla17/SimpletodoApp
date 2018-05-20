@@ -37,3 +37,7 @@ hr {
 	margin-bottom: 15px;
 }
 
+span {
+	word-break: break-all;
+}
+
